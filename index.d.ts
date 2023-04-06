@@ -22,7 +22,7 @@ export interface LogicalOpParserOpts {
   without?: LogicalOpParserFn
 };
 
-export type ParserOptions = false | { logicalOpParser?: LogicalOpParserOpts };
+export type ParserOptions = false | { logicalOpParser?: LogicalOpParserOpts, includeMetaPropKeys: true | string };
 
 /**
  * @param {Joi.Schema} joi - A Joi schema.
